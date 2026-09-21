@@ -4,11 +4,226 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Khozy's Personal Site</title>
+  <title>ALMATOV HABIBULLO - Resume</title>
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/gh/jetbrains/jetbrainsmono@1.0.0/css/webfonts/jetbrains-mono.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'JetBrains Mono', 'Fira Code', 'Consolas', monospace;
+      line-height: 1.6;
+      color: #333;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      background: #f5f5f5;
+    }
+
+    .container {
+      background: white;
+      padding: 40px;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+      color: #2c3e50;
+    }
+
+    h3 {
+      font-size: 1.2em;
+      color: #7f8c8d;
+      margin-bottom: 20px;
+      font-weight: 500;
+    }
+
+    .contact-info {
+      margin-bottom: 30px;
+      padding-bottom: 20px;
+      border-bottom: 2px solid #eee;
+    }
+
+    .contact-info p {
+      margin: 5px 0;
+    }
+
+    .contact-info a {
+      color: #3498db;
+      text-decoration: none;
+    }
+
+    .contact-info a:hover {
+      text-decoration: underline;
+    }
+
+    h2 {
+      font-size: 1.8em;
+      margin: 30px 0 15px 0;
+      color: #2c3e50;
+      border-bottom: 2px solid #3498db;
+      padding-bottom: 5px;
+    }
+
+    h3.section {
+      font-size: 1.3em;
+      margin: 20px 0 10px 0;
+      color: #34495e;
+    }
+
+    p {
+      margin-bottom: 15px;
+    }
+
+    ul {
+      margin-left: 20px;
+      margin-bottom: 15px;
+    }
+
+    li {
+      margin: 8px 0;
+    }
+
+    strong {
+      color: #2c3e50;
+    }
+
+    .education-item {
+      margin: 10px 0;
+    }
+
+    .education-item strong {
+      display: block;
+    }
+
+    .project-link {
+      color: #3498db;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .project-link:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 20px 10px;
+      }
+
+      .container {
+        padding: 20px;
+      }
+
+      h1 {
+        font-size: 2em;
+      }
+    }
+  </style>
 </head>
 
 <body>
-  <h1>Khozy</h1>
+  <div class="container">
+    <h1>ALMATOV HABIBULLO</h1>
+    <h3>Android / Java Developer</h3>
+
+    <div class="contact-info">
+      <p>📍 Jizzax, O'zbekiston</p>
+      <p>📧 <a href="mailto:habibulloalmatov@gmail.com">habibulloalmatov@gmail.com</a></p>
+      <p>📱 +998 93 292 11 26</p>
+      <p>🎂 23 yosh</p>
+      <p>🔗 <a href="https://linkedin.com/in/khozayn">LinkedIn</a> · <a href="https://github.com/khozay">GitHub</a> · <a
+          href="https://t.me/khozayn">Telegram</a></p>
+    </div>
+
+    <h2>Men haqimda</h2>
+    <p>Men foydalanuvchilar uchun qulay, tezkor va ishonchli Android ilovalarni yaratishga qiziqadigan Android
+      dasturchisiman. Toza, samarali va qo'llab-quvvatlash oson bo'lgan kod yozishga hamda sifatli mobil tajriba
+      yaratishga intilaman.</p>
+    <p>Ilovalarni <strong>Google Play Market</strong>'ga mustaqil ravishda tayyorlash va muammosiz joylashtirish
+      tajribasiga egaman. Hozirda Android Developer sifatida yangi ish imkoniyatlarini izlayapman.</p>
+
+    <h2>Ko'nikmalar</h2>
+
+    <h3 class="section">Android Development</h3>
+    <ul>
+      <li><strong>Kotlin</strong></li>
+      <li><strong>Java</strong></li>
+      <li>Android SDK</li>
+      <li>XML / Class-based Layouts</li>
+      <li>MVVM / Clean Architecture</li>
+      <li>REST API</li>
+      <li>Retrofit</li>
+      <li>Room Database</li>
+      <li>Firebase</li>
+      <li>Kotlin Coroutines</li>
+      <li>Git / GitHub</li>
+      <li>Google Play Console</li>
+      <li>App Deployment & Release Management</li>
+    </ul>
+
+    <h3 class="section">Boshqa</h3>
+    <ul>
+      <li><strong>C / C++</strong></li>
+      <li><strong>Dlang</strong></li>
+      <li><strong>Python</strong></li>
+      <li>Linux</li>
+      <li>Optimization</li>
+      <li>Game Dev & Art</li>
+      <li>CLI / Basic Terminal Operations</li>
+    </ul>
+
+    <h2>Loyihalar</h2>
+
+    <h3 class="section">Typeflow Keyboard</h3>
+    <p><strong>Mustaqil Android dasturchi · Kotlin · Android SDK</strong></p>
+    <p>Google Play'da nashr etilgan maxfiylikka yo'naltirilgan Android klaviatura ilovasi (3 yillik loyiha).</p>
+    <ul>
+      <li>Tezkor klaviatura, swipe input, custom themes & fonts</li>
+      <li>Emoji, clipboard history va floating keyboard</li>
+      <li>Password/PIN field detection va on-device text processing</li>
+      <li>Analytics va reklama SDK'larisiz</li>
+      <li>Google Play Console orqali release va maintenance</li>
+    </ul>
+    <p><strong>Google Play:</strong> <a href="https://play.google.com/store/apps/details?id=com.khozy.typeflow"
+        class="project-link">Typeflow Keyboard</a></p>
+
+    <h2>Ta'lim</h2>
+    <div class="education-item">
+      <strong>Jizzax Politexnika insituti akademik litseyi</strong>
+      <em>Aniq fanlar iqtisod</em> · 2019 – 2021
+    </div>
+    <div class="education-item">
+      <strong>Toshkent Axborot Texnologiyalari Universteti Samarqand filiali</strong>
+      <em>Kompyuter Injiniring AT-Service</em> · 2022 – 2026
+    </div>
+    <div class="education-item">
+      <strong>School-21</strong>
+      <em>Ko'p tarmoqli dasturlash</em> · 2024
+    </div>
+
+    <h2>Tillar</h2>
+    <ul>
+      <li>O'zbek — Ona tili</li>
+      <li>Ingliz — C1</li>
+      <li>Rus — B2</li>
+    </ul>
+
+    <h2>Qo'shimcha</h2>
+    <ul>
+      <li>Google Play Market'ga ilovalarni mustaqil joylashtirish</li>
+      <li>Android ilovalarni noldan ishlab chiqish</li>
+      <li>API va Firebase servislar bilan ishlash</li>
+      <li>Git orqali jamoaviy development</li>
+      <li>Yangi texnologiyalarni tez o'zlashtirish</li>
+    </ul>
+  </div>
 </body>
 
 </html>
