@@ -27,18 +27,19 @@
     body {
       font-family: 'Iosevka Nerd Font', 'Fira Code', 'Consolas', monospace;
       line-height: 1.6;
-      color: #333;
-      max-width: 800px;
+      color: #d4d4d4;
+      font-size: 16px;
+      max-width: 1200px;
       margin: 0 auto;
-      padding: 40px 20px;
-      background: #f5f5f5;
+      padding: 20px 15px;
+      background: #0a0a12;
     }
 
     .container {
-      background: white;
-      padding: 40px;
-      border-radius: 8px;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      background: #1a1d26;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
     }
 
     /* Header */
@@ -46,58 +47,66 @@
     .profile-container {
       display: flex;
       align-items: center;
-      gap: 30px;
-      margin-bottom: 20px;
+      gap: 20px;
+      margin-bottom: 15px;
     }
 
     .profile-image {
-      width: 120px;
-      height: 120px;
+      width: 90px;
+      height: 90px;
       border-radius: 50%;
       object-fit: cover;
-      border: 4px solid #3498db;
-      box-shadow: 0 4px 12px rgba(52, 152, 219, 0.3);
+      border: 3px solid #e94560;
+      box-shadow: 0 4px 12px rgba(233, 69, 96, 0.3);
     }
 
     .header-text {
       flex: 1;
     }
 
+    .section {
+      margin-top: 15px;
+      margin-bottom: 15px;
+      background-color: #222530;
+      padding: 15px 20px;
+      border-radius: 8px;
+    }
+
     h1 {
-      font-size: 2.5em;
-      margin-bottom: 10px;
-      color: #2c3e50;
+      font-size: 2.3em;
+      margin-bottom: 8px;
+      color: #ffffff;
+      font-weight: 600;
+      letter-spacing: 0.5px;
     }
 
     h3 {
-      font-size: 1.2em;
-      color: #7f8c8d;
-      margin-bottom: 20px;
+      font-size: 1.05em;
+      color: #c4c4c4;
+      margin-bottom: 15px;
       font-weight: 500;
     }
 
     /* Contact */
 
-    .contact-info {
-      margin-bottom: 30px;
-      padding-bottom: 20px;
-      border-bottom: 2px solid #eee;
-    }
+    .contact-info {}
 
     .contact-info p {
-      margin: 7px 0;
+      margin: 6px 0;
+      font-size: 0.95em;
     }
 
     .contact-info i {
       width: 22px;
-      margin-right: 6px;
-      color: #3498db;
+      margin-right: 8px;
+      color: #e94560;
       text-align: center;
     }
 
     .contact-info a {
-      color: #3498db;
+      color: #e94560;
       text-decoration: none;
+      font-weight: 500;
     }
 
     .contact-info a:hover {
@@ -107,70 +116,81 @@
     /* Sections */
 
     h2 {
-      font-size: 1.8em;
-      margin: 30px 0 15px 0;
-      color: #2c3e50;
-      border-bottom: 2px solid #3498db;
-      padding-bottom: 5px;
+      font-size: 1.4em;
+      margin: 12px 0 12px 0;
+      color: #ffffff;
+      font-weight: 600;
     }
 
     h2 i {
-      font-size: 0.8em;
-      margin-right: 8px;
-      color: #3498db;
+      font-size: 0.85em;
+      margin-right: 10px;
+      color: #e94560;
     }
 
     h3.section {
-      font-size: 1.3em;
-      margin: 20px 0 10px 0;
-      color: #34495e;
+      font-size: 1.15em;
+      margin: 18px 0 10px 0;
+      color: #d0d0d0;
+      font-weight: 500;
     }
 
     h3.section i {
-      color: #3498db;
+      color: #e94560;
       margin-right: 7px;
-      font-size: 0.9em;
+      font-size: 0.95em;
     }
 
     p {
-      margin-bottom: 15px;
+      margin-bottom: 12px;
+      font-size: 0.95em;
     }
 
     ul {
       margin-left: 20px;
-      margin-bottom: 15px;
+      margin-bottom: 12px;
+      list-style: none;
+      padding-left: 0;
     }
 
     li {
-      margin: 8px 0;
+      margin: 6px 0;
+      font-size: 0.93em;
     }
 
     strong {
-      color: #2c3e50;
+      color: #ffffff;
+      font-weight: 600;
     }
 
     /* Education */
 
     .education-item {
-      margin: 14px 0;
+      margin: 10px 0;
       padding-left: 5px;
     }
 
     .education-item strong {
       display: block;
+      font-size: 0.95em;
+    }
+
+    .education-item em {
+      font-size: 0.9em;
+      color: #a0a0a0;
     }
 
     .education-item i {
-      color: #3498db;
-      margin-right: 6px;
+      color: #e94560;
+      margin-right: 7px;
     }
 
     /* Project links */
 
     .project-link {
-      color: #3498db;
+      color: #e94560;
       text-decoration: none;
-      font-weight: 500;
+      font-weight: 600;
     }
 
     .project-link:hover {
@@ -180,16 +200,24 @@
     /* Skill icons */
 
     .skill-icon {
-      color: #3498db;
-      width: 20px;
-      margin-right: 5px;
+      color: #e94560;
+      width: 18px;
+      margin-right: 7px;
+    }
+
+    /* Skills grid layout */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 5px 20px;
     }
 
     /* Mobile */
 
     @media (max-width: 600px) {
       body {
-        padding: 20px 10px;
+        padding: 15px 10px;
+        font-size: 15px;
       }
 
       .container {
@@ -199,12 +227,12 @@
       .profile-container {
         flex-direction: column;
         text-align: center;
-        gap: 15px;
+        gap: 12px;
       }
 
       .profile-image {
-        width: 100px;
-        height: 100px;
+        width: 80px;
+        height: 80px;
       }
 
       h1 {
@@ -212,7 +240,15 @@
       }
 
       h2 {
-        font-size: 1.5em;
+        font-size: 1.25em;
+      }
+
+      h3.section {
+        font-size: 1.05em;
+      }
+
+      .skills-grid {
+        grid-template-columns: 1fr;
       }
     }
 
@@ -299,326 +335,337 @@
           <i class="fa-brands fa-telegram"></i>
           Telegram
         </a>
+
+        ·
+
+        <a href="https://instagram.com/khozayn" target="_blank">
+          <i class="fa-brands fa-instagram"></i>
+          Instagram
+        </a>
       </p>
 
     </div>
 
     <!-- About -->
+    <div class="section">
+      <h2>
+        <i class="fa-solid fa-terminal"></i>
+        Men haqimda
+      </h2>
 
-    <h2>
-      <i class="fa-solid fa-terminal"></i>
-      Men haqimda
-    </h2>
+      <p>
+        Men foydalanuvchilar uchun qulay, tezkor va ishonchli Android
+        ilovalarni yaratishga qiziqadigan Android dasturchisiman.
+        Toza, samarali va qo'llab-quvvatlash oson bo'lgan kod yozishga
+        hamda sifatli mobil tajriba yaratishga intilaman.
+      </p>
 
-    <p>
-      Men foydalanuvchilar uchun qulay, tezkor va ishonchli Android
-      ilovalarni yaratishga qiziqadigan Android dasturchisiman.
-      Toza, samarali va qo'llab-quvvatlash oson bo'lgan kod yozishga
-      hamda sifatli mobil tajriba yaratishga intilaman.
-    </p>
-
-    <p>
-      Ilovalarni <strong>Google Play Market</strong>'ga mustaqil ravishda
-      tayyorlash va muammosiz joylashtirish tajribasiga egaman.
-      Hozirda Android Developer sifatida yangi ish imkoniyatlarini izlayapman.
-    </p>
+      <p>
+        Ilovalarni <strong>Google Play Market</strong>'ga mustaqil ravishda
+        tayyorlash va muammosiz joylashtirish tajribasiga egaman.
+        Hozirda Android Developer sifatida yangi ish imkoniyatlarini izlayapman.
+      </p>
+    </div>
 
     <!-- Skills -->
-
-    <h2>
-      <i class="fa-solid fa-code"></i>
-      Ko'nikmalar
-    </h2>
-
-    <h3 class="section">
-      <i class="fa-brands fa-android"></i>
-      Android Development
-    </h3>
-
-    <ul>
-      <li>
-        <i class="fa-solid fa-code skill-icon"></i>
-        <strong>Kotlin</strong>
-      </li>
-
-      <li>
-        <i class="fa-brands fa-java skill-icon"></i>
-        <strong>Java</strong>
-      </li>
-
-      <li>
-        <i class="fa-solid fa-mobile-screen-button skill-icon"></i>
-        Android SDK
-      </li>
-
-      <li>
-        <i class="fa-solid fa-table-cells-large skill-icon"></i>
-        XML / Class-based Layouts
-      </li>
-
-      <li>
-        <i class="fa-solid fa-code-branch skill-icon"></i>
-        Command Line Tools / ADB
-      </li>
-
-      <li>
-        <i class="fa-solid fa-layer-group skill-icon"></i>
-        MVVM / Clean Architecture
-      </li>
-
-      <li>
-        <i class="fa-solid fa-cloud-arrow-up skill-icon"></i>
-        REST API
-      </li>
-
-      <li>
-        <i class="fa-solid fa-network-wired skill-icon"></i>
-        Retrofit
-      </li>
-
-      <li>
-        <i class="fa-solid fa-database skill-icon"></i>
-        Room Database
-      </li>
-
-      <li>
-        <i class="fa-solid fa-fire skill-icon"></i>
-        Firebase
-      </li>
-
-      <li>
-        <i class="fa-solid fa-bolt skill-icon"></i>
-        Kotlin Coroutines
-      </li>
-
-      <li>
-        <i class="fa-brands fa-git-alt skill-icon"></i>
-        Git / GitHub
-      </li>
-
-      <li>
-        <i class="fa-brands fa-google-play skill-icon"></i>
-        Google Play Console
-      </li>
-
-      <li>
-        <i class="fa-solid fa-rocket skill-icon"></i>
-        App Deployment & Release Management
-      </li>
-    </ul>
-
-    <h3 class="section">
-      <i class="fa-solid fa-laptop-code"></i>
-      Boshqa
-    </h3>
-
-    <ul>
-      <li>
-        <i class="fa-solid fa-c skill-icon"></i>
-        <strong>C / C++</strong>
-      </li>
-
-      <li>
-        <i class="fa-solid fa-code skill-icon"></i>
-        <strong>Dlang</strong>
-      </li>
-
-      <li>
-        <i class="fa-brands fa-python skill-icon"></i>
-        <strong>Python</strong>
-      </li>
-      <li>
-        <i class="fa-brands fa-python skill-icon"></i>
-        <strong>LLM / Ollama</strong>
-      </li>
-
-      <li>
-        <i class="fa-brands fa-linux skill-icon"></i>
-        Linux
-      </li>
-
-      <li>
-        <i class="fa-solid fa-gauge-high skill-icon"></i>
-        Optimization
-      </li>
-
-      <li>
-        <i class="fa-solid fa-gamepad skill-icon"></i>
-        Game Dev & Art
-      </li>
-
-      <li>
-        <i class="fa-solid fa-terminal skill-icon"></i>
-        CLI / Basic Terminal Operations
-      </li>
-    </ul>
-
-    <!-- Projects -->
-
-    <h2>
-      <i class="fa-solid fa-laptop-code"></i>
-      Loyihalar
-    </h2>
-
-    <h3 class="section">
-      <i class="fa-solid fa-keyboard"></i>
-      Typeflow Keyboard
-    </h3>
-
-    <p>
-      <strong>
-        Mustaqil Android dasturchi · Kotlin · Android SDK
-      </strong>
-    </p>
-
-    <p>
-      Google Play'da nashr etilgan maxfiylikka yo'naltirilgan
-      Android klaviatura ilovasi (3 yillik loyiha).
-    </p>
-
-    <ul>
-      <li>
-        <i class="fa-solid fa-bolt skill-icon"></i>
-        Tezkor klaviatura, swipe input, custom themes & fonts
-      </li>
-
-      <li>
-        <i class="fa-regular fa-face-smile skill-icon"></i>
-        Emoji, clipboard history va floating keyboard
-      </li>
-
-      <li>
-        <i class="fa-solid fa-shield-halved skill-icon"></i>
-        Password/PIN field detection va on-device text processing
-      </li>
-
-      <li>
-        <i class="fa-solid fa-chart-line skill-icon"></i>
-        Analytics va reklama SDK'larisiz
-      </li>
-
-      <li>
-        <i class="fa-brands fa-google-play skill-icon"></i>
-        Google Play Console orqali release va maintenance
-      </li>
-    </ul>
-
-    <p>
-      <strong>
-        <i class="fa-brands fa-google-play"></i>
-        Google Play:
-      </strong>
-
-      <a href="https://play.google.com/store/apps/details?id=com.khozy.typeflow" class="project-link" target="_blank">
-        Typeflow Keyboard
-      </a>
-    </p>
-
-    <!-- Education -->
-
-    <h2>
-      <i class="fa-solid fa-graduation-cap"></i>
-      Ta'lim
-    </h2>
-
-    <div class="education-item">
-
-      <strong>
-        <i class="fa-solid fa-school"></i>
-        Jizzax Politexnika insituti akademik litseyi
-      </strong>
-
-      <em>
-        Aniq fanlar iqtisod · 2019 – 2021
-      </em>
-
-    </div>
-
-    <div class="education-item">
-
-      <strong>
-        <i class="fa-solid fa-university"></i>
-        Toshkent Axborot Texnologiyalari Universteti Samarqand filiali
-      </strong>
-
-      <em>
-        Kompyuter Injiniring AT-Service · 2022 – 2026
-      </em>
-
-    </div>
-
-    <div class="education-item">
-
-      <strong>
+    <div class="section">
+      <h2>
         <i class="fa-solid fa-code"></i>
-        School-21
-      </strong>
+        Ko'nikmalarim
+      </h2>
 
-      <em>
-        Ko'p tarmoqli dasturlash · 2024
-      </em>
+      <h3 class="section">
+        <i class="fa-brands fa-android"></i>
+        Android Dasturlash
+      </h3>
 
+      <ul class="skills-grid">
+        <li>
+          <i class="fa-solid fa-code skill-icon"></i>
+          <strong>Kotlin</strong>
+        </li>
+
+        <li>
+          <i class="fa-brands fa-java skill-icon"></i>
+          <strong>Java</strong>
+        </li>
+
+        <li>
+          <i class="fa-solid fa-mobile-screen-button skill-icon"></i>
+          Android SDK
+        </li>
+
+        <li>
+          <i class="fa-solid fa-table-cells-large skill-icon"></i>
+          XML / Class-based Layouts
+        </li>
+
+        <li>
+          <i class="fa-solid fa-code-branch skill-icon"></i>
+          Command Line Tools / ADB
+        </li>
+
+        <li>
+          <i class="fa-solid fa-layer-group skill-icon"></i>
+          MVVM / Clean Architecture
+        </li>
+
+        <li>
+          <i class="fa-solid fa-cloud-arrow-up skill-icon"></i>
+          REST API
+        </li>
+
+        <li>
+          <i class="fa-solid fa-network-wired skill-icon"></i>
+          Retrofit
+        </li>
+
+        <li>
+          <i class="fa-solid fa-database skill-icon"></i>
+          Room Database
+        </li>
+
+        <li>
+          <i class="fa-solid fa-fire skill-icon"></i>
+          Firebase
+        </li>
+
+        <li>
+          <i class="fa-solid fa-bolt skill-icon"></i>
+          Kotlin Coroutines
+        </li>
+
+        <li>
+          <i class="fa-brands fa-git-alt skill-icon"></i>
+          Git / GitHub
+        </li>
+
+        <li>
+          <i class="fa-brands fa-google-play skill-icon"></i>
+          Google Play Console
+        </li>
+
+        <li>
+          <i class="fa-solid fa-rocket skill-icon"></i>
+          App Deployment & Release Management
+        </li>
+      </ul>
+
+      <h3 class="section">
+        <i class="fa-solid fa-laptop-code"></i>
+        Boshqa
+      </h3>
+
+      <ul class="skills-grid">
+        <li>
+          <i class="fa-solid fa-c skill-icon"></i>
+          <strong>C / C++</strong>
+        </li>
+
+        <li>
+          <i class="fa-solid fa-code skill-icon"></i>
+          <strong>Dlang</strong>
+        </li>
+
+        <li>
+          <i class="fa-brands fa-python skill-icon"></i>
+          <strong>Python</strong>
+        </li>
+        <li>
+          <i class="fa-brands fa-python skill-icon"></i>
+          <strong>LLM / Ollama</strong>
+        </li>
+
+        <li>
+          <i class="fa-brands fa-linux skill-icon"></i>
+          Linux
+        </li>
+
+        <li>
+          <i class="fa-solid fa-gauge-high skill-icon"></i>
+          Optimization
+        </li>
+
+        <li>
+          <i class="fa-solid fa-gamepad skill-icon"></i>
+          Game Dev & Art
+        </li>
+
+        <li>
+          <i class="fa-solid fa-terminal skill-icon"></i>
+          CLI / Basic Terminal Operations
+        </li>
+      </ul>
     </div>
+    <!-- Projects -->
+    <div class="section">
 
+      <h2>
+        <i class="fa-solid fa-laptop-code"></i>
+        Loyihalarim
+      </h2>
+
+      <h3 class="section">
+        <img src="typeflow-icon.png" alt="Typeflow Icon"
+          style="width: 24px; height: 24px; margin-right: 7px; vertical-align: middle;">
+        Typeflow Keyboard
+      </h3>
+
+      <p>
+        <strong>
+          Mustaqil Android dasturchi · Kotlin · Android SDK
+        </strong>
+      </p>
+
+      <p>
+        Google Play'da nashr etilgan maxfiylikka yo'naltirilgan
+        Android klaviatura ilovasi (3 yillik loyiha).
+      </p>
+
+      <ul>
+        <li>
+          <i class="fa-solid fa-bolt skill-icon"></i>
+          Tezkor klaviatura, swipe input, custom themes & fonts
+        </li>
+
+        <li>
+          <i class="fa-regular fa-face-smile skill-icon"></i>
+          Emoji, clipboard history va floating keyboard
+        </li>
+
+        <li>
+          <i class="fa-solid fa-shield-halved skill-icon"></i>
+          Password/PIN field detection va on-device text processing
+        </li>
+
+        <li>
+          <i class="fa-solid fa-chart-line skill-icon"></i>
+          Analytics va reklama SDK'larisiz
+        </li>
+
+        <li>
+          <i class="fa-brands fa-google-play skill-icon"></i>
+          Google Play Console orqali release va maintenance
+        </li>
+      </ul>
+
+      <p>
+        <strong>
+          <i class="fa-brands fa-google-play"></i>
+          Google Play:
+        </strong>
+
+        <a href="https://play.google.com/store/apps/details?id=com.khozy.typeflow" class="project-link" target="_blank">
+          Typeflow Keyboard
+        </a>
+      </p>
+    </div>
+    <!-- Education -->
+    <div class="section">
+      <h2>
+        <i class="fa-solid fa-graduation-cap"></i>
+        Ta'lim
+      </h2>
+
+      <div class="education-item">
+
+        <strong>
+          <i class="fa-solid fa-school"></i>
+          Jizzax Politexnika insituti akademik litseyi
+        </strong>
+
+        <em>
+          Aniq fanlar iqtisod · 2019 – 2021
+        </em>
+
+      </div>
+
+      <div class="education-item">
+
+        <strong>
+          <i class="fa-solid fa-university"></i>
+          SamTATU - Toshkent Axborot Texnologiyalari Universteti Samarqand filiali
+        </strong>
+
+        <em>
+          Kompyuter Injiniring AT-Service · 2022 – 2026
+        </em>
+
+      </div>
+
+      <div class="education-item">
+
+        <strong>
+          <i class="fa-solid fa-code"></i>
+          School-21
+        </strong>
+
+        <em>
+          Ko'p tarmoqli dasturlash · 2024
+        </em>
+
+      </div>
+    </div>
     <!-- Languages -->
+    <div class="section">
+      <h2>
+        <i class="fa-solid fa-language"></i>
+        Tillar
+      </h2>
 
-    <h2>
-      <i class="fa-solid fa-language"></i>
-      Tillar
-    </h2>
+      <ul>
+        <li>
+          <i class="fa-solid fa-earth-asia skill-icon"></i>
+          O'zbek — Ona tili
+        </li>
 
-    <ul>
-      <li>
-        <i class="fa-solid fa-earth-asia skill-icon"></i>
-        O'zbek — Ona tili
-      </li>
+        <li>
+          <i class="fa-solid fa-earth-europe skill-icon"></i>
+          Ingliz — C1
+        </li>
 
-      <li>
-        <i class="fa-solid fa-earth-europe skill-icon"></i>
-        Ingliz — C1
-      </li>
-
-      <li>
-        <i class="fa-solid fa-earth-europe skill-icon"></i>
-        Rus — B2
-      </li>
-    </ul>
+        <li>
+          <i class="fa-solid fa-earth-europe skill-icon"></i>
+          Rus — B2
+        </li>
+      </ul>
+    </div>
 
     <!-- Additional -->
+    <div class="section">
+      <h2>
+        <i class="fa-solid fa-toolbox"></i>
+        Qo'shimcha
+      </h2>
 
-    <h2>
-      <i class="fa-solid fa-toolbox"></i>
-      Qo'shimcha
-    </h2>
+      <ul>
+        <li>
+          <i class="fa-brands fa-google-play skill-icon"></i>
+          Google Play Market'ga ilovalarni mustaqil joylashtirish
+        </li>
 
-    <ul>
-      <li>
-        <i class="fa-brands fa-google-play skill-icon"></i>
-        Google Play Market'ga ilovalarni mustaqil joylashtirish
-      </li>
+        <li>
+          <i class="fa-solid fa-mobile-screen-button skill-icon"></i>
+          Android ilovalarni noldan ishlab chiqish
+        </li>
 
-      <li>
-        <i class="fa-solid fa-mobile-screen-button skill-icon"></i>
-        Android ilovalarni noldan ishlab chiqish
-      </li>
+        <li>
+          <i class="fa-solid fa-plug skill-icon"></i>
+          API va Firebase servislar bilan ishlash
+        </li>
 
-      <li>
-        <i class="fa-solid fa-plug skill-icon"></i>
-        API va Firebase servislar bilan ishlash
-      </li>
+        <li>
+          <i class="fa-brands fa-git-alt skill-icon"></i>
+          Git orqali jamoaviy development
+        </li>
 
-      <li>
-        <i class="fa-brands fa-git-alt skill-icon"></i>
-        Git orqali jamoaviy development
-      </li>
+        <li>
+          <i class="fa-solid fa-brain skill-icon"></i>
+          Yangi texnologiyalarni tez o'zlashtirish
+        </li>
+      </ul>
 
-      <li>
-        <i class="fa-solid fa-brain skill-icon"></i>
-        Yangi texnologiyalarni tez o'zlashtirish
-      </li>
-    </ul>
-
-  </div>
+    </div>
 
 </body>
 
