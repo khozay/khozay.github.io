@@ -43,6 +43,26 @@
 
     /* Header */
 
+    .profile-container {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      margin-bottom: 20px;
+    }
+
+    .profile-image {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #3498db;
+      box-shadow: 0 4px 12px rgba(52, 152, 219, 0.3);
+    }
+
+    .header-text {
+      flex: 1;
+    }
+
     h1 {
       font-size: 2.5em;
       margin-bottom: 10px;
@@ -176,6 +196,17 @@
         padding: 20px;
       }
 
+      .profile-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+      }
+
+      .profile-image {
+        width: 100px;
+        height: 100px;
+      }
+
       h1 {
         font-size: 2em;
       }
@@ -212,12 +243,16 @@
 
     <!-- Header -->
 
-    <h1>ALMATOV HABIBULLO</h1>
-
-    <h3>
-      <i class="fa-solid fa-code"></i>
-      Android / Java Developer
-    </h3>
+    <div class="profile-container">
+      <img src="myself.png" alt="Profile Picture" class="profile-image">
+      <div class="header-text">
+        <h1>ALMATOV HABIBULLO</h1>
+        <h3>
+          <i class="fa-solid fa-code"></i>
+          Android / Java Developer
+        </h3>
+      </div>
+    </div>
 
     <!-- Contact Information -->
 
