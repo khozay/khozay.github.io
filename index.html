@@ -4,10 +4,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>ALMATOV HABIBULLO - Resume</title>
-  <link rel="stylesheet"
-    href="https://cdn.jsdelivr.net/gh/jetbrains/jetbrainsmono@1.0.0/css/webfonts/jetbrains-mono.css">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
   <style>
+    @font-face {
+      font-family: 'Iosevka Nerd Font';
+      src: url('Iosevka.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+    }
+
     * {
       margin: 0;
       padding: 0;
@@ -15,7 +25,7 @@
     }
 
     body {
-      font-family: 'JetBrains Mono', 'Fira Code', 'Consolas', monospace;
+      font-family: 'Iosevka Nerd Font', 'Fira Code', 'Consolas', monospace;
       line-height: 1.6;
       color: #333;
       max-width: 800px;
@@ -31,6 +41,8 @@
       box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     }
 
+    /* Header */
+
     h1 {
       font-size: 2.5em;
       margin-bottom: 10px;
@@ -44,6 +56,8 @@
       font-weight: 500;
     }
 
+    /* Contact */
+
     .contact-info {
       margin-bottom: 30px;
       padding-bottom: 20px;
@@ -51,7 +65,14 @@
     }
 
     .contact-info p {
-      margin: 5px 0;
+      margin: 7px 0;
+    }
+
+    .contact-info i {
+      width: 22px;
+      margin-right: 6px;
+      color: #3498db;
+      text-align: center;
     }
 
     .contact-info a {
@@ -63,6 +84,8 @@
       text-decoration: underline;
     }
 
+    /* Sections */
+
     h2 {
       font-size: 1.8em;
       margin: 30px 0 15px 0;
@@ -71,10 +94,22 @@
       padding-bottom: 5px;
     }
 
+    h2 i {
+      font-size: 0.8em;
+      margin-right: 8px;
+      color: #3498db;
+    }
+
     h3.section {
       font-size: 1.3em;
       margin: 20px 0 10px 0;
       color: #34495e;
+    }
+
+    h3.section i {
+      color: #3498db;
+      margin-right: 7px;
+      font-size: 0.9em;
     }
 
     p {
@@ -94,13 +129,23 @@
       color: #2c3e50;
     }
 
+    /* Education */
+
     .education-item {
-      margin: 10px 0;
+      margin: 14px 0;
+      padding-left: 5px;
     }
 
     .education-item strong {
       display: block;
     }
+
+    .education-item i {
+      color: #3498db;
+      margin-right: 6px;
+    }
+
+    /* Project links */
 
     .project-link {
       color: #3498db;
@@ -111,6 +156,16 @@
     .project-link:hover {
       text-decoration: underline;
     }
+
+    /* Skill icons */
+
+    .skill-icon {
+      color: #3498db;
+      width: 20px;
+      margin-right: 5px;
+    }
+
+    /* Mobile */
 
     @media (max-width: 600px) {
       body {
@@ -124,106 +179,403 @@
       h1 {
         font-size: 2em;
       }
+
+      h2 {
+        font-size: 1.5em;
+      }
+    }
+
+    /* Print */
+
+    @media print {
+      body {
+        background: white;
+        padding: 0;
+      }
+
+      .container {
+        box-shadow: none;
+        border-radius: 0;
+        padding: 20px;
+      }
+
+      a {
+        color: inherit;
+      }
     }
   </style>
 </head>
 
 <body>
+
   <div class="container">
+
+    <!-- Header -->
+
     <h1>ALMATOV HABIBULLO</h1>
-    <h3>Android / Java Developer</h3>
+
+    <h3>
+      <i class="fa-solid fa-code"></i>
+      Android / Java Developer
+    </h3>
+
+    <!-- Contact Information -->
 
     <div class="contact-info">
-      <p>📍 Jizzax, O'zbekiston</p>
-      <p>📧 <a href="mailto:habibulloalmatov@gmail.com">habibulloalmatov@gmail.com</a></p>
-      <p>📱 +998 93 292 11 26</p>
-      <p>🎂 23 yosh</p>
-      <p>🔗 <a href="https://linkedin.com/in/khozayn">LinkedIn</a> · <a href="https://github.com/khozay">GitHub</a> · <a
-          href="https://t.me/khozayn">Telegram</a></p>
+
+      <p>
+        <i class="fa-solid fa-location-dot"></i>
+        Jizzax, O'zbekiston
+      </p>
+
+      <p>
+        <i class="fa-solid fa-envelope"></i>
+        <a href="mailto:habibulloalmatov@gmail.com">
+          habibulloalmatov@gmail.com
+        </a>
+      </p>
+
+      <p>
+        <i class="fa-solid fa-phone"></i>
+        +998 93 292 11 26
+      </p>
+
+      <p>
+        <i class="fa-solid fa-cake-candles"></i>
+        23 yosh
+      </p>
+
+      <p>
+        <a href="https://linkedin.com/in/khozayn" target="_blank">
+          <i class="fa-brands fa-linkedin"></i>
+          LinkedIn
+        </a>
+
+        ·
+
+        <a href="https://github.com/khozay" target="_blank">
+          <i class="fa-brands fa-github"></i>
+          GitHub
+        </a>
+
+        ·
+
+        <a href="https://t.me/khozayn" target="_blank">
+          <i class="fa-brands fa-telegram"></i>
+          Telegram
+        </a>
+      </p>
+
     </div>
 
-    <h2>Men haqimda</h2>
-    <p>Men foydalanuvchilar uchun qulay, tezkor va ishonchli Android ilovalarni yaratishga qiziqadigan Android
-      dasturchisiman. Toza, samarali va qo'llab-quvvatlash oson bo'lgan kod yozishga hamda sifatli mobil tajriba
-      yaratishga intilaman.</p>
-    <p>Ilovalarni <strong>Google Play Market</strong>'ga mustaqil ravishda tayyorlash va muammosiz joylashtirish
-      tajribasiga egaman. Hozirda Android Developer sifatida yangi ish imkoniyatlarini izlayapman.</p>
+    <!-- About -->
 
-    <h2>Ko'nikmalar</h2>
+    <h2>
+      <i class="fa-solid fa-terminal"></i>
+      Men haqimda
+    </h2>
 
-    <h3 class="section">Android Development</h3>
+    <p>
+      Men foydalanuvchilar uchun qulay, tezkor va ishonchli Android
+      ilovalarni yaratishga qiziqadigan Android dasturchisiman.
+      Toza, samarali va qo'llab-quvvatlash oson bo'lgan kod yozishga
+      hamda sifatli mobil tajriba yaratishga intilaman.
+    </p>
+
+    <p>
+      Ilovalarni <strong>Google Play Market</strong>'ga mustaqil ravishda
+      tayyorlash va muammosiz joylashtirish tajribasiga egaman.
+      Hozirda Android Developer sifatida yangi ish imkoniyatlarini izlayapman.
+    </p>
+
+    <!-- Skills -->
+
+    <h2>
+      <i class="fa-solid fa-code"></i>
+      Ko'nikmalar
+    </h2>
+
+    <h3 class="section">
+      <i class="fa-brands fa-android"></i>
+      Android Development
+    </h3>
+
     <ul>
-      <li><strong>Kotlin</strong></li>
-      <li><strong>Java</strong></li>
-      <li>Android SDK</li>
-      <li>XML / Class-based Layouts</li>
-      <li>MVVM / Clean Architecture</li>
-      <li>REST API</li>
-      <li>Retrofit</li>
-      <li>Room Database</li>
-      <li>Firebase</li>
-      <li>Kotlin Coroutines</li>
-      <li>Git / GitHub</li>
-      <li>Google Play Console</li>
-      <li>App Deployment & Release Management</li>
+      <li>
+        <i class="fa-solid fa-code skill-icon"></i>
+        <strong>Kotlin</strong>
+      </li>
+
+      <li>
+        <i class="fa-brands fa-java skill-icon"></i>
+        <strong>Java</strong>
+      </li>
+
+      <li>
+        <i class="fa-solid fa-mobile-screen-button skill-icon"></i>
+        Android SDK
+      </li>
+
+      <li>
+        <i class="fa-solid fa-table-cells-large skill-icon"></i>
+        XML / Class-based Layouts
+      </li>
+
+      <li>
+        <i class="fa-solid fa-layer-group skill-icon"></i>
+        MVVM / Clean Architecture
+      </li>
+
+      <li>
+        <i class="fa-solid fa-cloud-arrow-up skill-icon"></i>
+        REST API
+      </li>
+
+      <li>
+        <i class="fa-solid fa-network-wired skill-icon"></i>
+        Retrofit
+      </li>
+
+      <li>
+        <i class="fa-solid fa-database skill-icon"></i>
+        Room Database
+      </li>
+
+      <li>
+        <i class="fa-solid fa-fire skill-icon"></i>
+        Firebase
+      </li>
+
+      <li>
+        <i class="fa-solid fa-bolt skill-icon"></i>
+        Kotlin Coroutines
+      </li>
+
+      <li>
+        <i class="fa-brands fa-git-alt skill-icon"></i>
+        Git / GitHub
+      </li>
+
+      <li>
+        <i class="fa-brands fa-google-play skill-icon"></i>
+        Google Play Console
+      </li>
+
+      <li>
+        <i class="fa-solid fa-rocket skill-icon"></i>
+        App Deployment & Release Management
+      </li>
     </ul>
 
-    <h3 class="section">Boshqa</h3>
+    <h3 class="section">
+      <i class="fa-solid fa-laptop-code"></i>
+      Boshqa
+    </h3>
+
     <ul>
-      <li><strong>C / C++</strong></li>
-      <li><strong>Dlang</strong></li>
-      <li><strong>Python</strong></li>
-      <li>Linux</li>
-      <li>Optimization</li>
-      <li>Game Dev & Art</li>
-      <li>CLI / Basic Terminal Operations</li>
+      <li>
+        <i class="fa-solid fa-c skill-icon"></i>
+        <strong>C / C++</strong>
+      </li>
+
+      <li>
+        <i class="fa-solid fa-code skill-icon"></i>
+        <strong>Dlang</strong>
+      </li>
+
+      <li>
+        <i class="fa-brands fa-python skill-icon"></i>
+        <strong>Python</strong>
+      </li>
+
+      <li>
+        <i class="fa-brands fa-linux skill-icon"></i>
+        Linux
+      </li>
+
+      <li>
+        <i class="fa-solid fa-gauge-high skill-icon"></i>
+        Optimization
+      </li>
+
+      <li>
+        <i class="fa-solid fa-gamepad skill-icon"></i>
+        Game Dev & Art
+      </li>
+
+      <li>
+        <i class="fa-solid fa-terminal skill-icon"></i>
+        CLI / Basic Terminal Operations
+      </li>
     </ul>
 
-    <h2>Loyihalar</h2>
+    <!-- Projects -->
 
-    <h3 class="section">Typeflow Keyboard</h3>
-    <p><strong>Mustaqil Android dasturchi · Kotlin · Android SDK</strong></p>
-    <p>Google Play'da nashr etilgan maxfiylikka yo'naltirilgan Android klaviatura ilovasi (3 yillik loyiha).</p>
+    <h2>
+      <i class="fa-solid fa-laptop-code"></i>
+      Loyihalar
+    </h2>
+
+    <h3 class="section">
+      <i class="fa-solid fa-keyboard"></i>
+      Typeflow Keyboard
+    </h3>
+
+    <p>
+      <strong>
+        Mustaqil Android dasturchi · Kotlin · Android SDK
+      </strong>
+    </p>
+
+    <p>
+      Google Play'da nashr etilgan maxfiylikka yo'naltirilgan
+      Android klaviatura ilovasi (3 yillik loyiha).
+    </p>
+
     <ul>
-      <li>Tezkor klaviatura, swipe input, custom themes & fonts</li>
-      <li>Emoji, clipboard history va floating keyboard</li>
-      <li>Password/PIN field detection va on-device text processing</li>
-      <li>Analytics va reklama SDK'larisiz</li>
-      <li>Google Play Console orqali release va maintenance</li>
-    </ul>
-    <p><strong>Google Play:</strong> <a href="https://play.google.com/store/apps/details?id=com.khozy.typeflow"
-        class="project-link">Typeflow Keyboard</a></p>
+      <li>
+        <i class="fa-solid fa-bolt skill-icon"></i>
+        Tezkor klaviatura, swipe input, custom themes & fonts
+      </li>
 
-    <h2>Ta'lim</h2>
+      <li>
+        <i class="fa-regular fa-face-smile skill-icon"></i>
+        Emoji, clipboard history va floating keyboard
+      </li>
+
+      <li>
+        <i class="fa-solid fa-shield-halved skill-icon"></i>
+        Password/PIN field detection va on-device text processing
+      </li>
+
+      <li>
+        <i class="fa-solid fa-chart-line skill-icon"></i>
+        Analytics va reklama SDK'larisiz
+      </li>
+
+      <li>
+        <i class="fa-brands fa-google-play skill-icon"></i>
+        Google Play Console orqali release va maintenance
+      </li>
+    </ul>
+
+    <p>
+      <strong>
+        <i class="fa-brands fa-google-play"></i>
+        Google Play:
+      </strong>
+
+      <a href="https://play.google.com/store/apps/details?id=com.khozy.typeflow" class="project-link" target="_blank">
+        Typeflow Keyboard
+      </a>
+    </p>
+
+    <!-- Education -->
+
+    <h2>
+      <i class="fa-solid fa-graduation-cap"></i>
+      Ta'lim
+    </h2>
+
     <div class="education-item">
-      <strong>Jizzax Politexnika insituti akademik litseyi</strong>
-      <em>Aniq fanlar iqtisod</em> · 2019 – 2021
-    </div>
-    <div class="education-item">
-      <strong>Toshkent Axborot Texnologiyalari Universteti Samarqand filiali</strong>
-      <em>Kompyuter Injiniring AT-Service</em> · 2022 – 2026
-    </div>
-    <div class="education-item">
-      <strong>School-21</strong>
-      <em>Ko'p tarmoqli dasturlash</em> · 2024
+
+      <strong>
+        <i class="fa-solid fa-school"></i>
+        Jizzax Politexnika insituti akademik litseyi
+      </strong>
+
+      <em>
+        Aniq fanlar iqtisod · 2019 – 2021
+      </em>
+
     </div>
 
-    <h2>Tillar</h2>
+    <div class="education-item">
+
+      <strong>
+        <i class="fa-solid fa-university"></i>
+        Toshkent Axborot Texnologiyalari Universteti Samarqand filiali
+      </strong>
+
+      <em>
+        Kompyuter Injiniring AT-Service · 2022 – 2026
+      </em>
+
+    </div>
+
+    <div class="education-item">
+
+      <strong>
+        <i class="fa-solid fa-code"></i>
+        School-21
+      </strong>
+
+      <em>
+        Ko'p tarmoqli dasturlash · 2024
+      </em>
+
+    </div>
+
+    <!-- Languages -->
+
+    <h2>
+      <i class="fa-solid fa-language"></i>
+      Tillar
+    </h2>
+
     <ul>
-      <li>O'zbek — Ona tili</li>
-      <li>Ingliz — C1</li>
-      <li>Rus — B2</li>
+      <li>
+        <i class="fa-solid fa-earth-asia skill-icon"></i>
+        O'zbek — Ona tili
+      </li>
+
+      <li>
+        <i class="fa-solid fa-earth-europe skill-icon"></i>
+        Ingliz — C1
+      </li>
+
+      <li>
+        <i class="fa-solid fa-earth-europe skill-icon"></i>
+        Rus — B2
+      </li>
     </ul>
 
-    <h2>Qo'shimcha</h2>
+    <!-- Additional -->
+
+    <h2>
+      <i class="fa-solid fa-toolbox"></i>
+      Qo'shimcha
+    </h2>
+
     <ul>
-      <li>Google Play Market'ga ilovalarni mustaqil joylashtirish</li>
-      <li>Android ilovalarni noldan ishlab chiqish</li>
-      <li>API va Firebase servislar bilan ishlash</li>
-      <li>Git orqali jamoaviy development</li>
-      <li>Yangi texnologiyalarni tez o'zlashtirish</li>
+      <li>
+        <i class="fa-brands fa-google-play skill-icon"></i>
+        Google Play Market'ga ilovalarni mustaqil joylashtirish
+      </li>
+
+      <li>
+        <i class="fa-solid fa-mobile-screen-button skill-icon"></i>
+        Android ilovalarni noldan ishlab chiqish
+      </li>
+
+      <li>
+        <i class="fa-solid fa-plug skill-icon"></i>
+        API va Firebase servislar bilan ishlash
+      </li>
+
+      <li>
+        <i class="fa-brands fa-git-alt skill-icon"></i>
+        Git orqali jamoaviy development
+      </li>
+
+      <li>
+        <i class="fa-solid fa-brain skill-icon"></i>
+        Yangi texnologiyalarni tez o'zlashtirish
+      </li>
     </ul>
+
   </div>
+
 </body>
 
 </html>
